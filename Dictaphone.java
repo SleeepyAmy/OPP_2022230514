@@ -64,7 +64,7 @@ public String toString() {
            "  - Manufacturer: " + memoryCard.getManufacturer() + "\n" +
            "  - Capacity: " + memoryCard.getCapacity() + "GB\n" +
            "  - Class: " + memoryCard.getCardClass() + "\n" +
-           "Suitability Score: " + getSuitability(); // 
+         
 }
 
 }
