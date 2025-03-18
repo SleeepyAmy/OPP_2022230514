@@ -1,3 +1,4 @@
+
 // So, the Dictaphone class represents a voice recorder (Dictaphone)
 // It extends the Product class (inherits product details)
 // It also implements Comparable, so we can compare Dictaphones based on suitability
@@ -48,22 +49,23 @@ public class Dictaphone extends Product implements Comparable<Dictaphone> {
     }
 
     // This method returns a string describing the Dictaphone object (used when printing)
-    @Override
-    public String toString() {
-        return """
-               Dictaphone Details:
-               Product ID: """ + getProductID() + "\n" +
-               "Brand: " + getBrand() + "\n" +
-               "Price: $" + getPrice() + "\n" +
-               "Manufacturer: " + manufacturerName + "\n" +
-               "Model: " + model + "\n" +
-               "Year of Manufacture: " + yearOfManufacture + "\n" +
-               "Battery Capacity: " + batteryCapacity + "mAh\n" +
-               "Memory Card Info:\n" +
-               "  - Manufacturer: " + memoryCard.getManufacturer() + "\n" +
-               "  - Capacity: " + memoryCard.getCapacity() + "GB\n" +
-               "  - Class: " + memoryCard.getCardClass();
-    }
+@Override
+public String toString() {
+    return """
+           Dictaphone Details:
+           Product ID: """ + getProductID() + "\n" +
+           "Brand: " + getBrand() + "\n" +
+           "Price: $" + getPrice() + "\n" +
+           "Manufacturer: " + manufacturerName + "\n" +
+           "Model: " + model + "\n" +
+           "Year of Manufacture: " + yearOfManufacture + "\n" +
+           "Battery Capacity: " + batteryCapacity + "mAh\n" +
+           "Memory Card Info:\n" +
+           "  - Manufacturer: " + memoryCard.getManufacturer() + "\n" +
+           "  - Capacity: " + memoryCard.getCapacity() + "GB\n" +
+           "  - Class: " + memoryCard.getCardClass() + "\n" +
+           "Suitability Score: " + getSuitability(); // 
 }
 
+}
 
