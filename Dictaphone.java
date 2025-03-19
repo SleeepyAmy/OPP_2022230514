@@ -67,7 +67,7 @@ public class Dictaphone extends Product implements Comparable<Dictaphone> {
                "Memory Card Info:\n" +
                "  - Manufacturer: " + memoryCard.getManufacturer() + "\n" +
                "  - Capacity: " + memoryCard.getCapacity() + "GB\n" +
-               "  - Class: " + memoryCard.getCardClass(); // ❌ Suitability score is removed
+               "  - Class: " + memoryCard.getCardClass(); 
     }
 }
 
